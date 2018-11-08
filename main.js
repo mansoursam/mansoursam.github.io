@@ -93,16 +93,20 @@ $(".contactitem").click(function () {
     $('html, body').animate({
         scrollTop: $("#contact").offset().top
     }, 1000);
+    $(".contactitem ").css({ color: '#E31B6D' });
 });
 $(".projectsitem").click(function () {
     $('html, body').animate({
         scrollTop: $("#myWorks").offset().top
     }, 1000);
+    $(".projectsitem ").css({ color: '#E31B6D' });
+
 });
 $(".aboutitem").click(function () {
     $('html, body').animate({
         scrollTop: $("#abilities").offset().top
     }, 1500);
+    $(".aboutitem ").css({ color: '#E31B6D' });
 });
 $('.homeitem').click(function () {
     $('html, body').animate({ scrollTop: 0 }, 1000);
@@ -117,20 +121,20 @@ $(document).ready(() => {
             $(".projectsitem ").css({ color: 'grey' });
         }
         if ((scrollPosition > 500) && (scrollPosition < 1100)) {
-            $(".aboutitem ").css({ color: '#E31B6D' }, 500);
-            $(".contactitem ").css({ color: 'grey' }, 500);
-            $(".projectsitem ").css({ color: 'grey' }, 500);
+            $(".aboutitem ").css({ color: '#E31B6D' });
+            $(".contactitem ").css({ color: 'grey' });
+            $(".projectsitem ").css({ color: 'grey' });
         }
-        else if ((scrollPosition > 1700) && (scrollPosition < 2000)) {
-            $(".projectsitem ").css({ color: '#E31B6D' }, 500);
-            $(".aboutitem ").css({ color: 'grey' }, 500);
-            $(".contactitem ").css({ color: 'grey' }, 500);
+        else if ((scrollPosition > 1400) && (scrollPosition < 2000)) {
+            $(".projectsitem ").css({ color: '#E31B6D' });
+            $(".aboutitem ").css({ color: 'grey' });
+            $(".contactitem ").css({ color: 'grey' });
 
         }
         else if ((scrollPosition > 2300) && (scrollPosition < 2600)) {
-            $(".contactitem ").css({ color: '#E31B6D' }, 500);
-            $(".projectsitem ").css({ color: 'grey' }, 500);
-            $(".aboutitem ").css({ color: 'grey' }, 500);
+            $(".contactitem ").css({ color: '#E31B6D' });
+            $(".projectsitem ").css({ color: 'grey' });
+            $(".aboutitem ").css({ color: 'grey' });
         }
     });
 });
